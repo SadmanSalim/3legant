@@ -11,6 +11,9 @@
     <link
         href="https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic"
         rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Space+Grotesk:300,regular,500,600,700" rel="stylesheet" />
     <title>3legant</title>
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
@@ -72,7 +75,7 @@
     <!-- *nav Section end -->
 
 
-            <!-- *banner Section start -->
+    <!-- *banner Section start -->
     <section id="big_banner" class="mb-4">
         <div class="container col">
             <div class="big_banner_img">
@@ -81,13 +84,13 @@
             <div class="banner_texts d-flex">
                 <h2 class="col-6 fs-1">Simply Unique/
                     Simply Better.</h2>
-                    <p class="col-5 fs-6">3legant is a gift & decorations store based in HCMC, Vietnam. Est since 2019. </p>
+                <p class="col-5 fs-6">3legant is a gift & decorations store based in HCMC, Vietnam. Est since 2019. </p>
             </div>
         </div>
     </section>
     <!-- *banner Section end -->
 
-            <!-- *items display Section start -->
+    <!-- *items display Section start -->
     <!-- <section id="products">
         <div class="container">
             <div class="row">
@@ -128,11 +131,11 @@
     <!-- *items Section end -->
 
 
-            <!-- * Section start -->
+    <!-- * Section start -->
     <section id="items_display">
         <div class="container">
             <div class="row">
-                <div class="leftside col-lg-5 mx-lg-auto col">
+                <div class="leftside col-lg-6 col">
                     <div class="pd_cnt">
                         <div class="pd_text">
                             <h4 class="fs-lg-2">Living Room</h4>
@@ -143,7 +146,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="rightside mt-3 mt-lg-0 col-lg-6">
+                <div class="rightside mt-3 mt-lg-0 col-lg-6 col">
                     <div class="pd_cnt right_pd col">
                         <div class="pd_text left_side">
                             <h4 class="fs-lg-2">Bedroom</h4>
@@ -170,7 +173,73 @@
 
 
 
+    <!-- *New Arrival Section start -->
+    <section id="new_arrival">
+        <div class="container">
+            <div class="headings mt-5 d-flex justify-content-between">
+                <h4 class="fs-1">New <br> Arrivals</h4>
+                <a class="d-none d-lg-inline-block" href="#">More Products <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+            <div class="products mt-3">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <div class="pd_box">
+                            <div class="pd_img">
+                                <a href="#"><img class="img-fluid" src="./assets/img/pd_1.png" alt=""></a>
+                            </div>
+                            <div class="pd_details mt-2 ms-3">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star mb-1"></i>
+                                <a href="#">
+                                    <h5 class="fs-6">Loveseat Sofa</h5>
+                                </a>
+                                <p>$199.00 <span>$400.00</span></p>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">Slide 2</div>
+                      <div class="swiper-slide">Slide 3</div>
+                      <div class="swiper-slide">Slide 4</div>
+                      <div class="swiper-slide">Slide 5</div>
+                      <div class="swiper-slide">Slide 6</div>
+                      <div class="swiper-slide">Slide 7</div>
+                      <div class="swiper-slide">Slide 8</div>
+                      <div class="swiper-slide">Slide 9</div>
+                    </div>
+                    <div class="swiper-button-next">
+                        <i class="fa-solid fa-angle-right"></i>
+                    </div>
+                    <div class="swiper-button-prev">
+                        <i class="fa-solid fa-angle-left"></i>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </section>
+    <!-- * Section end -->
+
+
+
     <script src="./assets/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 4,
+      spaceBetween: 30,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    });
+    </script>
 </body>
 
 </html>
